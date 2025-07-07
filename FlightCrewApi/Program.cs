@@ -14,6 +14,7 @@ builder.Services.AddDbContext<FlightCrewDbContext>(options =>
 
 builder.Services.AddScoped<SeedService>();
 builder.Services.AddScoped<IPilotRepository, PilotRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssemblies(typeof(GetAllFlightsQueryRequest).Assembly));
