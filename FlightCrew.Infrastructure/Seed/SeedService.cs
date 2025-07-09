@@ -30,9 +30,9 @@ namespace FlightCrew.Infrastructure.Seed
             var pilot1 = new Pilot(
                 Guid.NewGuid(),
                 new PilotInfo(
-                    name: "John Doe",
-                    age: 45,
-                    gender: GenderTypes.Male,
+                    name: "Hale Dedeoğlu",
+                    age: 25,
+                    gender: GenderTypes.Female,
                     nationality: "USA",
                     knownLanguages: new List<Language>
                     {
@@ -48,7 +48,7 @@ namespace FlightCrew.Infrastructure.Seed
             var pilot2 = new Pilot(
                 Guid.NewGuid(),
                 new PilotInfo(
-                    name: "Jane Smith",
+                    name: "Zeynep Küçükaras",
                     age: 32,
                     gender: GenderTypes.Female,
                     nationality: "UK",
@@ -66,7 +66,7 @@ namespace FlightCrew.Infrastructure.Seed
             var pilot3 = new Pilot(
                 Guid.NewGuid(),
                 new PilotInfo(
-                    name: "Alice Brown",
+                    name: "Semra Önal",
                     age: 24,
                     gender: GenderTypes.Female,
                     nationality: "Canada",
