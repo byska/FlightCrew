@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlightCrew.Infrastructure.Migrations
 {
     [DbContext(typeof(FlightCrewDbContext))]
-    [Migration("20250709082134_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20250714092025_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
