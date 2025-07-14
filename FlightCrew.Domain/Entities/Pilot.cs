@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace FlightCrew.Domain.Entities
 {
-    public class Pilot
+    public class Pilot : EntityBase
     {
-        public Guid Id { get; private set; }
-
         public PilotInfo Info { get; private set; }
         public AircraftType VehicleRestriction { get; private set; }
         public Domain.ValueObjects.Range AllowedRange { get; private set; }

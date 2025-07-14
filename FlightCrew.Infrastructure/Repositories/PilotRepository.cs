@@ -21,12 +21,12 @@ namespace FlightCrew.Infrastructure.Repositories
 
         public async Task<IReadOnlyList<Pilot>> GetAllAsync(CancellationToken ct)
         {
-            return await _dbContext.Pilots.AsNoTracking().ToListAsync(ct);
+            return await _dbContext.Pilots.Where(x=>x.IsActive).AsNoTracking().ToListAsync(ct);
         }
 
         public async Task<Pilot> GetByIdAsync(Guid id, CancellationToken ct)
         {
-            return await _dbContext.Pilots.Where(x=>x.Id==id).FirstOrDefaultAsync(ct);
+            return await _dbContext.Pilots.Where(x=>x.Id==id && x.IsActive).FirstOrDefaultAsync(ct);
         }
     }
 }
